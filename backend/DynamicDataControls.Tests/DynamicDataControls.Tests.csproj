@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <RootNamespace>DynamicDataControls.Tests</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- xUnit 2.4.x — required for FsCheck.Xunit 3.x compatibility -->
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="xunit" Version="2.4.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+
+    <!-- Property-Based Testing: FsCheck 3.x (requires xunit 2.4.x) -->
+    <PackageReference Include="FsCheck.Xunit" Version="3.0.0-rc1" />
+
+    <!-- Mocking -->
+    <PackageReference Include="Moq" Version="4.20.72" />
+
+    <!-- Integration-test host factory (task 17.2) -->
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.11" />
+
+    <!-- Testcontainers SQL Server for integration tests (task 17.2) -->
+    <PackageReference Include="Testcontainers.MsSql" Version="3.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DynamicDataControls.Api\DynamicDataControls.Api.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+</Project>

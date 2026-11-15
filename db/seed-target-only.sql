@@ -1,0 +1,17 @@
+﻿-- ============================================================
+-- Dynamic Data Controls ג€” Seed Data Script
+-- ============================================================
+-- Requirements: 10.2, 10.3, 10.5, 10.6
+--
+-- Prerequisites: Run the following scripts first:
+--   1. target-schema.sql  ג†’ against DynamicDataControlsTargetDB
+--   2. system-schema.sql  ג†’ against DynamicDataControlsDB
+--
+-- ג”€ג”€ Record counts ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€ג”€
+--   SECTION A: Target DB (DynamicDataControlsTargetDB)
+--     tbl_departments :  10 rows  (8 active + 2 inactive)
+--     tbl_employees   :  82 rows
+--     tbl_contracts   :  35 rows
+--     TOTAL target    : 127 rows  ג“ (Requirement 10.2: ג‰¥ 100)
+--
+--   

@@ -1,0 +1,77 @@
+// ===================================================================
+// ControlFormComponent — form layout (RTL)
+// ===================================================================
+
+:host {
+  display: block;
+}
+
+.form-host {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+// ── Toolbar ──────────────────────────────────────────────────────────
+
+mat-toolbar {
+  gap: 8px;
+}
+
+.toolbar-title {
+  flex: 1;
+  font-size: 1.1rem;
+}
+
+// ── Form content ─────────────────────────────────────────────────────
+
+.form-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 16px;
+  max-width: 920px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: 600px) {
+    padding: 32px 24px;
+  }
+}
+
+// ── Loading state ─────────────────────────────────────────────────────
+
+.spinner-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 0;
+}
+
+// ── Conditions section ────────────────────────────────────────────────
+
+.conditions-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.section-title {
+  margin: 0 0 4px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.01em;
+}
+
+// ── Action buttons ────────────────────────────────────────────────────
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding-top: 8px;
+  // RTL: primary action (save) on the right, cancel to its left
+  justify-content: flex-end;
+}

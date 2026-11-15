@@ -1,0 +1,76 @@
+:host {
+  display: block;
+}
+
+// ── Toolbar ────────────────────────────────────────────────────────────────────
+mat-toolbar {
+  // Space title on the right, button on the left (RTL flex row)
+  justify-content: space-between;
+
+  button {
+    // Material's raised button already carries a ripple; keep padding consistent
+    gap: 4px;
+  }
+}
+
+// ── Search bar ─────────────────────────────────────────────────────────────────
+.search-wrap {
+  padding: 16px 24px 0;
+
+  mat-form-field {
+    width: 100%;
+    max-width: 420px;
+  }
+}
+
+// ── Data table ──────────────────────────────────────────────────────────────────
+.controls-table {
+  display: block;
+  width: calc(100% - 48px);
+  margin: 16px 24px;
+  overflow-x: auto;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.14);
+  border-radius: 4px;
+}
+
+// Row hover / focus feedback
+.mat-mdc-row {
+  cursor: pointer;
+  transition: background-color 150ms ease;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+
+  &:focus {
+    outline: 2px solid #1976d2;
+    outline-offset: -2px;
+    background-color: rgba(25, 118, 210, 0.06);
+  }
+}
+
+// Keep action buttons from wrapping on narrow viewports
+.mat-column-actions {
+  white-space: nowrap;
+  min-width: 100px;
+}
+
+// ── Empty state ────────────────────────────────────────────────────────────────
+.empty-state {
+  margin: 64px auto;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 1rem;
+}
+
+// ── Responsive ─────────────────────────────────────────────────────────────────
+@media (max-width: 600px) {
+  .search-wrap {
+    padding: 8px 8px 0;
+  }
+
+  .controls-table {
+    width: calc(100% - 16px);
+    margin: 8px;
+  }
+}

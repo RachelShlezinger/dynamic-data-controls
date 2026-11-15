@@ -1,0 +1,49 @@
+<div class="execution-container">
+
+  <!-- Header ----------------------------------------------------------------->
+  <div class="execution-header">
+    <h2 class="control-title">{{ controlName() }}</h2>
+
+    <button mat-raised-button
+            color="primary"
+            [disabled]="isRunning()"
+            (click)="run()"
+            aria-label="הרץ בקרה">
+      <mat-icon>play_arrow</mat-icon>
+      הרץ בקרה
+    </button>
+  </div>
+
+  <!-- Global loading overlay (visibility managed internally by the component) -->
+  <app-loading-spinner />
+
+  <!-- 30-second warning banner ---------------------------------------------->
+  @if (showCancelWarning()) {
+    <div class="warning-banner" role="alert" aria-live="assertive">
+      <span>הבקרה עדיין מורצת — ייתכן שתיקח זמן נוסף</span>
+      <button mat-stroked-button color="warn" (click)="cancel()">
+        בטל הרצה
+      </button>
+    </div>
+  }
+
+  <!-- Result summary -------------------------------------------------------->
+  @if (result()) {
+    <div class="result-summary">
+      <span>נמצאו <strong>{{ result()!.anomalyCount }}</strong> רשומות חריגות</span>
+      @if (result()!.isTruncated) {
+        <p class="truncation-notice">
+          התוצאות קוצצו ל-10,000 הרשומות הראשונות
+        </p>
+      }
+    </div>
+  }
+
+  <!-- Results table (placeholder — data wired in task 13.2) ----------------->
+  @if (resultsPage()) {
+    <app-results-table
+      [results]="resultsPage()!"
+      [columns]="resultsPage()!.columns" />
+  }
+
+</div>

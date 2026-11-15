@@ -1,0 +1,87 @@
+:host {
+  display: block;
+}
+
+// ── Toolbar ─────────────────────────────────────────────────────────────────
+mat-toolbar {
+  justify-content: space-between;
+}
+
+// ── Loading ─────────────────────────────────────────────────────────────────
+.spinner-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+// ── Main layout: two-column grid for entities + fields; full-width for rels ─
+.admin-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  padding: 24px;
+}
+
+// ── Panel ────────────────────────────────────────────────────────────────────
+.panel {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.14);
+  padding: 16px;
+  overflow-x: auto;
+
+  &--full {
+    grid-column: 1 / -1;
+  }
+}
+
+.panel-title {
+  margin: 0 0 12px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.78);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding-bottom: 8px;
+}
+
+// ── Tables ───────────────────────────────────────────────────────────────────
+.admin-table {
+  width: 100%;
+
+  .technical {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.85rem;
+    color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+// Highlight selected entity row
+.selected-row {
+  background-color: rgba(25, 118, 210, 0.08);
+}
+
+// Row hover
+.mat-mdc-row:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+// ── Empty state ───────────────────────────────────────────────────────────────
+.empty-state {
+  margin: 24px auto;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+// ── Responsive ────────────────────────────────────────────────────────────────
+@media (max-width: 800px) {
+  .admin-layout {
+    grid-template-columns: 1fr;
+    padding: 12px;
+    gap: 16px;
+  }
+
+  .panel--full {
+    grid-column: 1;
+  }
+}

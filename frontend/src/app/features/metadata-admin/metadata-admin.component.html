@@ -1,0 +1,44 @@
+<div dir="rtl" class="admin-host">
+  <mat-toolbar color="primary">
+    <span>ניהול מטאדטה</span>
+  </mat-toolbar>
+
+  @if (isLoading()) {
+    <div class="spinner-wrap" role="status" aria-label="טוען נתונים">
+      <mat-spinner diameter="48" />
+    </div>
+  } @else {
+    <div class="admin-layout">
+
+      <app-metadata-entity-table
+        [entities]="entities()"
+        [selectedId]="selectedEntityId()"
+        (selectEntity)="selectEntity($event)" />
+
+      @if (selectedEntityId() !== null) {
+        <app-metadata-fields-table [fields]="fields()" [title]="selectedEntityName()" />
+      }
+
+      <section class="panel panel--full" aria-labelledby="rel-heading">
+        <h2 id="rel-heading" class="panel-title">קשרים בין ישויות</h2>
+        @if (relationships().length === 0) {
+          <p class="empty-state" role="status">לא הוגדרו קשרים</p>
+        } @else {
+          <table mat-table [dataSource]="relationships()" class="admin-table">
+            <ng-container matColumnDef="sourceEntity">
+              <th mat-header-cell *matHeaderCellDef scope="col">ישות מקור</th>
+              <td mat-cell *matCellDef="let r">{{ entityName(r.sourceEntityId) }}</td>
+            </ng-container>
+            <ng-container matColumnDef="targetEntity">
+              <th mat-header-cell *matHeaderCellDef scope="col">ישות יעד</th>
+              <td mat-cell *matCellDef="let r">{{ entityName(r.targetEntityId) }}</td>
+            </ng-container>
+            <tr mat-header-row *matHeaderRowDef="relColumns"></tr>
+            <tr mat-row *matRowDef="let r; columns: relColumns;"></tr>
+          </table>
+        }
+      </section>
+
+    </div>
+  }
+</div>

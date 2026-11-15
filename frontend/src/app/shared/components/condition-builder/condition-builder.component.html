@@ -1,0 +1,49 @@
+<div class="condition-builder" role="group" aria-label="תנאי בקרה">
+  @for (cond of definition().conditions; track cond.id; let i = $index) {
+    <div class="condition-row" role="group" [attr.aria-label]="'תנאי ' + (i + 1)">
+      <mat-form-field appearance="outline" class="f-entity"><mat-label>ישות</mat-label>
+        <mat-select [value]="cond.entityName" (selectionChange)="onEntityChange(i, $event.value)">
+          @for (e of entities(); track e.id) { <mat-option [value]="e.friendlyName">{{ e.friendlyName }}</mat-option> }
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="f-field"><mat-label>שדה</mat-label>
+        <mat-select [value]="cond.fieldName" (selectionChange)="onFieldChange(i, $event.value)" [disabled]="!cond.entityName">
+          @for (f of fieldsFor(cond.entityName); track f.id) { <mat-option [value]="f.friendlyName" [matTooltip]="f.description ?? ''">{{ f.friendlyName }}</mat-option> }
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="f-op"><mat-label>אופרטור</mat-label>
+        <mat-select [value]="cond.operator" (selectionChange)="updateCondition(i, { operator: $event.value })">
+          @for (op of operatorsFor(cond.fieldName, cond.entityName); track op) { <mat-option [value]="op">{{ operatorLabel(op) }}</mat-option> }
+        </mat-select>
+      </mat-form-field>
+      @if (!isNullOperator(cond.operator)) {
+        @if (isDateField(cond.fieldName, cond.entityName)) {
+          <mat-form-field appearance="outline" class="f-val"><mat-label>ערך</mat-label>
+            <input matInput [matDatepicker]="dp" [value]="parseDate(cond.value)" (dateChange)="updateCondition(i, { value: formatDate($event.value) })">
+            <mat-datepicker-toggle matIconSuffix [for]="dp" /><mat-datepicker #dp />
+          </mat-form-field>
+        } @else {
+          <mat-form-field appearance="outline" class="f-val"><mat-label>ערך</mat-label>
+            <input matInput [value]="cond.value ?? ''" (blur)="onValueBlur(i, $any($event.target).value, cond)">
+            @if (hasTypeError(i)) { <mat-error>{{ typeErrorMessage(i) }}</mat-error> }
+          </mat-form-field>
+        }
+      }
+      @if (i < definition().conditions.length - 1) {
+        <mat-form-field appearance="outline" class="f-logic">
+          <mat-select [value]="cond.logicalOperator ?? 'AND'" (selectionChange)="updateCondition(i, { logicalOperator: $event.value })">
+            <mat-option value="AND">AND</mat-option><mat-option value="OR">OR</mat-option>
+          </mat-select>
+        </mat-form-field>
+      }
+      <button mat-icon-button color="warn" type="button" (click)="removeCondition(i)"
+        [attr.aria-label]="'הסר תנאי ' + (i + 1)" [disabled]="definition().conditions.length === 1">
+        <mat-icon aria-hidden="true">close</mat-icon>
+      </button>
+    </div>
+  }
+  <button mat-stroked-button color="primary" type="button" class="add-btn" (click)="addCondition()"
+    [disabled]="definition().conditions.length >= 20">
+    <mat-icon aria-hidden="true">add</mat-icon> הוסף תנאי
+  </button>
+</div>

@@ -1,0 +1,75 @@
+// =============================================================
+// AiInterfaceComponent — RTL-compatible layout
+// =============================================================
+
+:host {
+  display: block;
+  padding: 24px 16px;
+}
+
+.page-title {
+  margin: 0 0 24px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: start;
+}
+
+.phase-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: var(--mat-app-surface, #fff);
+}
+
+.full-width {
+  width: 100%;
+}
+
+// Visual separator before the condition builder
+.builder-wrapper {
+  padding-top: 16px;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+// Action row — primary action at the inline-start (right in RTL)
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+
+  // Align icon + label inside buttons
+  button {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  // Spinner sits inline with the button content
+  mat-progress-spinner {
+    display: inline-block;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Responsive — single-column on narrow viewports
+// ---------------------------------------------------------------------------
+@media (max-width: 599px) {
+  .phase-card {
+    padding: 16px;
+  }
+
+  .actions {
+    flex-direction: column;
+
+    button {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}

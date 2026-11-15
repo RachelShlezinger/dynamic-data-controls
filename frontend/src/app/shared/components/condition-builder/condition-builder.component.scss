@@ -1,0 +1,96 @@
+// =============================================================
+// ConditionBuilderComponent — RTL-compatible flex layout
+// =============================================================
+
+:host {
+  display: block;
+}
+
+.condition-builder {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+// Each condition is a flex row that wraps on narrow screens
+.condition-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+
+// Individual field widths — use logical min-width so RTL/LTR both work
+.f-entity {
+  flex: 1 1 150px;
+  min-width: 130px;
+  max-width: 220px;
+}
+
+.f-field {
+  flex: 1 1 150px;
+  min-width: 130px;
+  max-width: 220px;
+}
+
+.f-op {
+  flex: 1 1 130px;
+  min-width: 110px;
+  max-width: 180px;
+}
+
+.f-val {
+  flex: 1 1 160px;
+  min-width: 130px;
+  max-width: 220px;
+}
+
+// AND / OR selector — compact fixed width
+.f-logic {
+  flex: 0 0 80px;
+  min-width: 72px;
+}
+
+// Remove button — vertically centered with the form fields
+// Material form fields add 1.25em of subscript space at the bottom,
+// so we offset the button to visually align with the control
+button[mat-icon-button] {
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+// Add-condition button sits below the last row
+.add-btn {
+  align-self: flex-start;
+  margin-top: 12px;
+
+  mat-icon {
+    margin-inline-end: 4px;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Responsive — single-column stack on narrow viewports (< 600 px)
+// ---------------------------------------------------------------------------
+@media (max-width: 599px) {
+  .condition-row {
+    flex-direction: column;
+  }
+
+  .f-entity,
+  .f-field,
+  .f-op,
+  .f-val,
+  .f-logic {
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+}

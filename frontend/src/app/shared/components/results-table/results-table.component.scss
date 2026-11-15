@@ -1,0 +1,101 @@
+// ── Results Table Component ───────────────────────────────────────────────
+
+.results-table-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+// ── Truncation banner ─────────────────────────────────────────────────────
+.truncation-banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background-color: #fff3e0;
+  border: 1px solid #ffb300;
+  border-radius: 4px;
+  color: #e65100;
+  font-weight: 500;
+
+  mat-icon {
+    color: #f57c00;
+    flex-shrink: 0;
+  }
+}
+
+// ── Toolbar ───────────────────────────────────────────────────────────────
+.table-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+
+  .search-field {
+    flex: 1 1 240px;
+    max-width: 400px;
+  }
+
+  .export-btn {
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+}
+
+// ── Table scroll container ────────────────────────────────────────────────
+.table-scroll {
+  overflow-x: auto;
+  border-radius: 4px;
+}
+
+// ── Mat table ─────────────────────────────────────────────────────────────
+.results-mat-table {
+  width: 100%;
+  min-width: 400px;
+
+  // Header cells
+  .mat-mdc-header-cell {
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  // Data cells
+  .mat-mdc-cell {
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+// ── Sortable header ───────────────────────────────────────────────────────
+.sortable-header {
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+
+  .sort-icon {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    color: #3f51b5;
+  }
+}
+
+// ── Responsive ───────────────────────────────────────────────────────────
+@media (max-width: 600px) {
+  .table-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+
+    .search-field {
+      max-width: 100%;
+    }
+  }
+}

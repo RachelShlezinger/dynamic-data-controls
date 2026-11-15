@@ -1,0 +1,21 @@
+<div
+  class="error-banner"
+  role="alert"
+  aria-live="assertive"
+>
+  <span class="banner-icon" aria-hidden="true">
+    <mat-icon>error_outline</mat-icon>
+  </span>
+
+  <span class="banner-message">{{ message() }}</span>
+
+  <button
+    #closeButton
+    mat-icon-button
+    class="banner-close"
+    aria-label="סגור הודעת שגיאה"
+    (click)="close()"
+  >
+    <mat-icon>close</mat-icon>
+  </button>
+</div>

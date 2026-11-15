@@ -1,0 +1,175 @@
+// =============================================================
+// Global styles — RTL (Hebrew) + Angular Material
+// =============================================================
+
+// ----- Reset / Base -----
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  // RTL base direction — Material components inherit this automatically
+  direction: rtl;
+  font-family: 'Rubik', 'Assistant', 'Arial', sans-serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #fafafa;
+}
+
+// ----- Typography -----
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+// ----- Layout utilities -----
+// RTL-compatible flex: use logical properties so row start/end are
+// direction-aware without manual overrides for LTR vs RTL.
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1 1 auto;
+}
+
+// Logical margin/padding helpers
+.ms-auto  { margin-inline-start: auto; }
+.me-auto  { margin-inline-end: auto; }
+.ps-16    { padding-inline-start: 16px; }
+.pe-16    { padding-inline-end: 16px; }
+
+// ----- Page layout -----
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  flex: 1 1 auto;
+  padding: 16px;
+
+  @media (min-width: 600px) {
+    padding: 24px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 32px;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+// ----- Responsive: prevent horizontal scroll (320 px – 2560 px) -----
+@media (min-width: 320px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+// ----- Material RTL integration -----
+// Material reads `dir` from the DOM via CDK Directionality service.
+// These rules handle edge-cases where the cascade needs an explicit nudge.
+
+// Ensure dialogs always render RTL
+.cdk-overlay-container .mat-mdc-dialog-container {
+  direction: rtl;
+  font-family: 'Rubik', 'Assistant', sans-serif;
+}
+
+// Menus and select panels
+.cdk-overlay-pane {
+  direction: rtl;
+}
+
+// Snackbar
+.mat-mdc-snack-bar-container {
+  direction: rtl;
+  font-family: 'Rubik', 'Assistant', sans-serif;
+}
+
+// Date picker panel
+.mat-datepicker-content {
+  direction: rtl;
+}
+
+// Form fields
+.mat-mdc-form-field {
+  direction: rtl;
+  font-family: inherit;
+}
+
+// Tables
+.mat-mdc-table {
+  width: 100%;
+}
+
+// ----- Utility classes -----
+.text-center  { text-align: center; }
+.text-start   { text-align: start; }  // logical — RTL = right, LTR = left
+.text-end     { text-align: end; }
+
+.w-full  { width: 100%; }
+.h-full  { height: 100%; }
+
+.mt-8  { margin-top: 8px; }
+.mt-16 { margin-top: 16px; }
+.mt-24 { margin-top: 24px; }
+
+.mb-8  { margin-bottom: 8px; }
+.mb-16 { margin-bottom: 16px; }
+.mb-24 { margin-bottom: 24px; }
+
+// ----- Accessibility -----
+// Visible focus ring for keyboard navigation
+:focus-visible {
+  outline: 2px solid #3f51b5;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+// Skip-link (screen-reader / keyboard navigation aid)
+.skip-link {
+  position: absolute;
+  inset-inline-start: -9999px;
+  top: 8px;
+  z-index: 9999;
+  padding: 8px 16px;
+  background: #3f51b5;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+
+  &:focus {
+    inset-inline-start: 8px;
+  }
+}

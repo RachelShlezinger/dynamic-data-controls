@@ -1,0 +1,33 @@
+# .NET
+backend/**/bin/
+backend/**/obj/
+backend/**/*.user
+backend/**/.vs/
+backend/**/appsettings.Development.json
+backend/**/appsettings.Production.json
+
+# Angular
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/.env
+
+# Python
+ai-service/.venv/
+ai-service/venv/
+ai-service/__pycache__/
+ai-service/**/*.pyc
+ai-service/.env
+
+# IDE / OS
+.vs/
+*.suo
+*.user
+.idea/
+.vscode/settings.json
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
+logs/

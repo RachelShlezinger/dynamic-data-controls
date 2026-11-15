@@ -1,0 +1,48 @@
+<div dir="rtl" class="list-host">
+  <mat-toolbar color="primary">
+    <span>בקרות נתונים</span>
+    <button mat-raised-button routerLink="/controls/new"><mat-icon>add</mat-icon>בקרה חדשה</button>
+  </mat-toolbar>
+
+  <div class="search-wrap">
+    <mat-form-field appearance="outline">
+      <mat-label>חיפוש בקרה</mat-label>
+      <input matInput [value]="searchText()" (input)="onSearch($any($event.target).value)"
+             placeholder="חפש לפי שם או תיאור" />
+      <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+  </div>
+
+  @if (filteredControls().length === 0) {
+    <p class="empty-state" role="status" aria-live="polite">לא נמצאו בקרות התואמות את החיפוש</p>
+  } @else {
+    <table mat-table [dataSource]="filteredControls()" class="controls-table" role="table">
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef scope="col">שם</th>
+        <td mat-cell *matCellDef="let c">{{ c.name }}</td>
+      </ng-container>
+      <ng-container matColumnDef="description">
+        <th mat-header-cell *matHeaderCellDef scope="col">תיאור</th>
+        <td mat-cell *matCellDef="let c">{{ truncate(c.description) }}</td>
+      </ng-container>
+      <ng-container matColumnDef="createdAt">
+        <th mat-header-cell *matHeaderCellDef scope="col">תאריך יצירה</th>
+        <td mat-cell *matCellDef="let c">{{ formatDate(c.createdAt) }}</td>
+      </ng-container>
+      <ng-container matColumnDef="lastRun">
+        <th mat-header-cell *matHeaderCellDef scope="col">הרצה אחרונה</th>
+        <td mat-cell *matCellDef="let c">{{ formatLastRun(c.lastExecutedAt) }}</td>
+      </ng-container>
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef scope="col">פעולות</th>
+        <td mat-cell *matCellDef="let c">
+          <button mat-icon-button (click)="editControl(c.id)" [attr.aria-label]="'ערוך ' + c.name" matTooltip="ערוך"><mat-icon>edit</mat-icon></button>
+          <button mat-icon-button color="primary" (click)="runControl(c.id)" [attr.aria-label]="'הרץ ' + c.name" matTooltip="הרץ"><mat-icon>play_arrow</mat-icon></button>
+        </td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let r; columns: displayedColumns;" tabindex="0"
+          (keydown.enter)="editControl(r.id)" (keydown.space)="runControl(r.id)"></tr>
+    </table>
+  }
+</div>

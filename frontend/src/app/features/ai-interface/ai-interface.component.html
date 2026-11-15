@@ -1,0 +1,55 @@
+<div class="ai-interface" dir="rtl">
+  <h1 class="page-title">הגדרת בקרה בשפה חופשית</h1>
+
+  @if (!parsedDefinition()) {
+    <section class="phase-card">
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>תאר את הבקרה בשפה חופשית</mat-label>
+        <textarea matInput rows="6" maxlength="1000"
+          [value]="description()"
+          (input)="description.set($any($event.target).value)"
+          placeholder="לדוגמה: בקרה על עובדים שגילם מתחת ל-18 ומשכורתם מעל 15,000 ₪"
+          aria-describedby="char-hint">
+        </textarea>
+        <mat-hint id="char-hint" align="end">{{ descriptionLength() }}/1000</mat-hint>
+      </mat-form-field>
+      <div class="actions">
+        <button mat-raised-button color="primary" type="button"
+          (click)="analyzeDescription()" [disabled]="!canSubmit()">
+          @if (isAnalyzing()) {
+            <mat-progress-spinner diameter="20" mode="indeterminate" />
+          } @else {
+            <mat-icon>auto_fix_high</mat-icon> נתח תיאור
+          }
+        </button>
+      </div>
+    </section>
+  } @else {
+    <section class="phase-card">
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>שם הבקרה המוצע</mat-label>
+        <input matInput maxlength="100"
+          [value]="parsedDefinition()!.controlName"
+          (input)="onControlNameChange($any($event.target).value)" />
+      </mat-form-field>
+      <div class="builder-wrapper">
+        <app-condition-builder
+          [definition]="parsedDefinition()!.definition"
+          (definitionChange)="onDefinitionChange($event)" />
+      </div>
+      <div class="actions">
+        <button mat-raised-button color="primary" type="button"
+          (click)="confirmAndSave()" [disabled]="isSaving()">
+          @if (isSaving()) {
+            <mat-progress-spinner diameter="20" mode="indeterminate" />
+          } @else {
+            <mat-icon>save</mat-icon> אשר ושמור
+          }
+        </button>
+        <button mat-stroked-button type="button" (click)="reset()">
+          <mat-icon>arrow_back</mat-icon> חזור לעריכה
+        </button>
+      </div>
+    </section>
+  }
+</div>

@@ -1,0 +1,855 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Create SQL Server system database schema script": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684826105
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684849572
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794693464548
+      }
+    ],
+    "1.2 Create target database schema script": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684826792
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794693482072
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794693778279
+      }
+    ],
+    "1.3 Create seed data script with intentional anomalies": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684829870
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794693794211
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794695526715
+      }
+    ],
+    "1.4 Create demo controls seed SQL": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684830147
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794697064350
+      },
+      {
+        "executionId": "c6794dc7-805c-4195-b2f1-113e6b6aebee",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794721279283
+      }
+    ],
+    "2.1 Initialize .NET 8 Web API project structure": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684830567
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684854177
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794693469106
+      }
+    ],
+    "2.2 Create EF Core entity classes and AppDbContext": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684830899
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794693485895
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794693781832
+      }
+    ],
+    "2.3 Generate EF Core migrations and DB initializer": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684831197
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794693798224
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794695530382
+      }
+    ],
+    "2.4 Configure JWT Bearer authentication and role authorization": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684831415
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794693801984
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794695533904
+      }
+    ],
+    "2.5 Implement global exception middleware and security audit logger": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684831715
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794697068700
+      },
+      {
+        "executionId": "c6794dc7-805c-4195-b2f1-113e6b6aebee",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794721283027
+      }
+    ],
+    "3.1 Implement MetadataRepository": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684831912
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794697073092
+      },
+      {
+        "executionId": "c6794dc7-805c-4195-b2f1-113e6b6aebee",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794721286657
+      }
+    ],
+    "3.2 Implement MetadataService with validation": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684832117
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794722579195
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794725175862
+      }
+    ],
+    "3.3 Implement MetadataController": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684832356
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794725195866
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794727028837
+      }
+    ],
+    "4.1 Define ControlDefinition domain models with JSON serialization": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684832659
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794697076704
+      },
+      {
+        "executionId": "c6794dc7-805c-4195-b2f1-113e6b6aebee",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794721290201
+      }
+    ],
+    "4.2 Implement ControlsRepository": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684832983
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794722582801
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794725179760
+      }
+    ],
+    "4.3 Implement ControlsService with business validation": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684833150
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794725199558
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794727033064
+      }
+    ],
+    "4.4 Implement ControlsController": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684833322
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794727474738
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794728377091
+      }
+    ],
+    "5.1 Implement IQueryBuilderService and core single-entity SQL builder": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684833517
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794722586331
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794725183582
+      }
+    ],
+    "5.2 Add multi-entity JOIN support to QueryBuilderService": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684833714
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794725203158
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794727037080
+      }
+    ],
+    "5.3 Add SELECT-only guard and DML/DDL rejection": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684834087
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794727478685
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794728381425
+      }
+    ],
+    "6.1 Implement core ExecutionService": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684834284
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794728401497
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794728677450
+      }
+    ],
+    "6.2 Implement concurrent execution guard": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684834500
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794728681272
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794729088388
+      }
+    ],
+    "6.3 Implement CancellationToken support and CancelAsync": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684834713
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794728685153
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794729092610
+      }
+    ],
+    "6.4 Implement ExecutionController": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684834995
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794729096354
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794729212945
+      }
+    ],
+    "7.1 Implement AiProxyService with HTTP client, context builder, and schema validator": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684835177
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794722589843
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794725187745
+      }
+    ],
+    "7.2 Implement AiProxyController": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684835369
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794727053088
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794727465817
+      }
+    ],
+    "8.1 Set up FastAPI project structure with Pydantic models": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684835562
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684857846
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794693472992
+      }
+    ],
+    "8.2 Implement MockAI engine": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684835768
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794693489346
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794693785489
+      }
+    ],
+    "8.3 Implement /parse router with error handling": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684836024
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794693805353
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794695538233
+      }
+    ],
+    "9. Checkpoint — Ensure all backend and AI tests pass": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684836237
+      }
+    ],
+    "10.1 Initialize Angular 17+ project with RTL configuration": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684836473
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684861714
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794693477900
+      }
+    ],
+    "10.2 Create TypeScript domain interfaces and models": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684836670
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794693492940
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794693789400
+      }
+    ],
+    "10.3 Implement Angular core HTTP services": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684836932
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794693809839
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794695541828
+      }
+    ],
+    "10.4 Implement AuthInterceptor and ErrorInterceptor": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684837111
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794695550438
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794697056509
+      }
+    ],
+    "10.5 Set up Angular routing and AdminGuard": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684837292
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794695553948
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794697059975
+      }
+    ],
+    "11.1 Implement LoadingSpinnerComponent and ErrorBannerComponent": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684837485
+      },
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794697080629
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794721353882
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794722574477
+      }
+    ],
+    "11.2 Implement ConditionBuilderComponent": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684837668
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794722593617
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794725191427
+      }
+    ],
+    "12.1 Implement ControlsListComponent": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684837918
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794725206812
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794727040961
+      }
+    ],
+    "12.2 Implement ControlFormComponent (create and edit)": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684838100
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794727482730
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794728385877
+      }
+    ],
+    "13.1 Implement ControlExecutionComponent": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684838296
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794727486846
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794728389857
+      }
+    ],
+    "13.2 Implement ResultsTableComponent": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684838534
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794727490758
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794728393710
+      }
+    ],
+    "14.1 Implement AiInterfaceComponent": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684838728
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794725210514
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794727044773
+      }
+    ],
+    "15.1 Implement MetadataAdminComponent (admin only)": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684839006
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794727056904
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794727470039
+      }
+    ],
+    "16. Checkpoint — Ensure all Angular tests pass": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684839185
+      }
+    ],
+    "17.1 Configure Angular proxy and verify end-to-end HTTP connectivity": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684839372
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794729225846
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794729374340
+      }
+    ],
+    "17.2 Write integration tests (xUnit + Testcontainers)": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684839721
+      },
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794729386700
+      }
+    ],
+    "18. Final Checkpoint — Ensure all tests pass": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794684839970
+      }
+    ],
+    "8. Python AI Service (FastAPI)": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794695538360
+      }
+    ],
+    "10. Angular Frontend — Foundation": [
+      {
+        "executionId": "54311cf7-af58-494e-bb41-fb60c8f87adb",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794697060117
+      }
+    ],
+    "1. Database Setup — Schema and Seed Data": [
+      {
+        "executionId": "c6794dc7-805c-4195-b2f1-113e6b6aebee",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794721279528
+      }
+    ],
+    "2. .NET Web API — Foundation": [
+      {
+        "executionId": "c6794dc7-805c-4195-b2f1-113e6b6aebee",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794721283179
+      }
+    ],
+    "11. Angular — Shared Components": [
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794725191567
+      }
+    ],
+    "3. Metadata Layer (.NET)": [
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794727028968
+      }
+    ],
+    "14. Angular — AI Interface": [
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794727044877
+      }
+    ],
+    "7. AI Proxy (.NET)": [
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794727465996
+      }
+    ],
+    "15. Angular — Metadata Admin": [
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794727470252
+      }
+    ],
+    "4. Controls CRUD Layer (.NET)": [
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794728377316
+      }
+    ],
+    "5. QueryBuilderService (.NET)": [
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794728381605
+      }
+    ],
+    "12. Angular — Controls Feature": [
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794728386084
+      }
+    ],
+    "13. Angular — Execution and Results": [
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794728393920
+      }
+    ],
+    "6. ExecutionService (.NET)": [
+      {
+        "executionId": "6245a31e-2ac5-4c15-9ddc-00fa5ea58903",
+        "chatSessionId": "sess_88f44b8a-55c0-4e5e-ad53-4577456180aa",
+        "timestamp": 1794729213064
+      }
+    ]
+  }
+}
