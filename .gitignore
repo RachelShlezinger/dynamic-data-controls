@@ -31,3 +31,9 @@ Thumbs.db
 # Logs
 *.log
 logs/
+
+# Kiro IDE workspace
+.kiro/
+
+# Original requirements file
+Files/
